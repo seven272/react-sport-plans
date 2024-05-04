@@ -1,0 +1,93 @@
+.rpe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font: var(--font-l);
+  color: var(--font-color);
+  margin: 15px 0;
+}
+
+.subtitle {
+  font: var(--font-menu);
+  color: var(--font-color);
+}
+
+.description {
+  font: var(--font-m);
+  color: var(--font-color);
+  text-align: start;
+}
+
+.items {
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--border-main);
+  box-sizing: border-box;
+}
+.rating {
+  width: 20%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: var(--border-main);
+}
+
+.stress {
+  width: 80%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zone {
+  width: 25%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: var(--border-main);
+}
+
+.rpe_zone {
+  width: 20%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: var(--border-main);
+}
+
+.breath {
+  width: 25%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: var(--border-main);
+}
+
+.talk {
+  width: 30%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

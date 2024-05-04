@@ -1,0 +1,67 @@
+.result {
+  width: 90%;
+  height: auto;
+  margin: 30px auto 30px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-areas:
+    'chart1 chart2'
+    'chart3 chart4';
+  justify-content: center;
+  row-gap: 50px;
+}
+
+.result__wrap_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.result__subtitle {
+  font: var(--font-l);
+  color: var(--font-color);
+}
+
+.chart1 {
+  grid-area: chart1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: max-content;
+}
+.chart2 {
+  grid-area: chart2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: max-content;
+}
+.chart3 {
+  grid-area: chart3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart4 {
+  grid-area: chart4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .result {
+    width: 70%;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+      'chart1'
+      'chart2'
+      'chart3'
+      'chart4';
+  }
+}

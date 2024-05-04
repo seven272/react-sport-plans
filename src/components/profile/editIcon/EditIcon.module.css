@@ -1,0 +1,23 @@
+.edit_wrapper {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.edit_icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  color: var( --font-color);
+  opacity: 0.5;
+}
+
+.edit_text {
+  font: var(--font-submenu);
+  color: var( --font-color);
+  text-transform: lowercase;
+  opacity: 0.5;
+}

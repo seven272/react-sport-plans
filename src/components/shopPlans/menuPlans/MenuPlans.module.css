@@ -1,0 +1,140 @@
+.plans__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans__types {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.plans__menu {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plans__title {
+  text-transform: inherit;
+  font: var(--font-l);
+  color:var(--font-color);
+  margin-bottom: 20px;
+}
+
+.type__subtitle {
+  text-transform: inherit;
+  font: var(--font-l);
+  color: var(--font-color);
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.type__items {
+  width: 70%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.type__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--font-submenu);
+  border: var(--border-main);
+  color: var(--font-color);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 7px;
+  cursor: pointer;
+}
+
+.type__name:hover {
+  background-color: var(--bg-invert-color);
+  color: var(--font-invert-color);
+}
+
+.type__name_active {
+  font: var(--font-submenu);
+  border: var(--border-main);
+  color: var(--font-invert-color);
+  background-color: var(--bg-invert-color);
+  padding: 5px 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.plans__distances {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.distance__items {
+  width: 70%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.distance__subtitle {
+  text-transform: inherit;
+  font: var(--font-l);
+  color: var(--font-color);
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.distance__name {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--font-submenu);
+  border: var(--border-main);
+  color: var(--font-color);
+  padding: 5px 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.distance__name_active {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--font-submenu);
+  border: var(--border-main);
+  color: var(--font-invert-color);
+  background-color: var(--bg-invert-color);
+  padding: 5px 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.distance__name:hover {
+  background-color: var(--bg-invert-color);
+  color: var(--font-invert-color);
+}
+
+.list__plans {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

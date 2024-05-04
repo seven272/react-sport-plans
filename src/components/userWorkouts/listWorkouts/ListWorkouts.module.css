@@ -1,0 +1,18 @@
+.workouts {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  font: var(--font-l);
+  color: var(--font-color);
+  text-transform: uppercase;
+  margin: 20px 0 30px 0;
+}
+
+.items {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  /* border: var(--border-main); */
+}

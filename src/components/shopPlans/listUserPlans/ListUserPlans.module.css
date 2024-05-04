@@ -1,0 +1,29 @@
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  font: var(--font-xl);
+  color: var(--font-color);
+}
+
+.items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
