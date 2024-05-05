@@ -22,7 +22,7 @@ const Fio = () => {
   return (
     <div className={styles.fio}>
       {showForm ? (
-        <NameForm getDataFromForm={getDataFromForm} />
+        <NameForm getDataFromForm={getDataFromForm} closeForm={setShowForm}/>
       ) : (
         <>
           <img

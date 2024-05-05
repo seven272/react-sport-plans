@@ -23,7 +23,7 @@ const Pulse = () => {
   return (
     <div className={styles.pulse}>
       {showForm ? (
-        <PulseForm getData={getDataFromForm} />
+        <PulseForm getData={getDataFromForm} closeForm={setShowForm}/>
       ) : (
         <>
           <h3 className={styles.title}>Пульсовые зоны</h3>

@@ -5,7 +5,7 @@ import Input from '../../../UI/input/Input'
 import Button from '../../../UI/button/Button'
 import styles from './Forms.module.css'
 
-const PulseForm = ({ getData }) => {
+const PulseForm = ({ getData, closeForm }) => {
   const zonesPulse = useSelector((state) => state.user.pulses)
 
   const [pulses, setPulses] = useState({
@@ -54,6 +54,7 @@ const PulseForm = ({ getData }) => {
 
   const saveHandlePulseZone = () => {
     getData(pulses)
+    closeForm(false)
   }
 
   return (

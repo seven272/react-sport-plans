@@ -7,7 +7,7 @@ import Button from '../../../UI/button/Button'
 import InputTime from '../../../UI/inputTime/InputTime'
 
 
-const RecordForm = ({ getDataFromForm }) => {
+const RecordForm = ({ getDataFromForm, closeForm}) => {
   const userRecords = useSelector((state) => state.user.records)
   const [record, setRecord] = useState({
     ...userRecords,
@@ -57,6 +57,7 @@ const RecordForm = ({ getDataFromForm }) => {
   const handleSaveRecord = () => {
     setRecord(record)
     getDataFromForm(record)
+    closeForm(false)
   }
   return (
     <div className={styles.form}>

@@ -5,12 +5,12 @@ import styles from './Forms.module.css'
 import Input from '../../../UI/input/Input'
 import Button from '../../../UI/button/Button'
 
-const NameForm = ({ getDataFromForm }) => {
+const NameForm = ({ getDataFromForm, closeForm }) => {
   const userData = useSelector((state) => state.user.persona)
   const [person, setPerson] = useState({
     name: '',
     age: null,
-    weight: null,
+    weight: null, 
     height: null,
   })
   const getData = (payload) => {
@@ -36,6 +36,7 @@ const NameForm = ({ getDataFromForm }) => {
   const handleSavePerson = () => {
     setPerson(person)
     getDataFromForm(person)
+    closeForm(false)
   }
   return (
     <div className={styles.form}>

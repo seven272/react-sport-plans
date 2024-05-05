@@ -38,6 +38,7 @@ const Rpe = () => {
         {rpeAndPulse.map((elem, inx) => {
           return (
             <li
+              key={inx}
               className={styles.item}
               style={{ backgroundColor: arrColors[inx] }}
             >

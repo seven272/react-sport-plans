@@ -23,7 +23,7 @@ const Records = () => {
   return (
     <div className={styles.records}>
       {showForm ? (
-        <RecordForm getDataFromForm={getDataFromForm} />
+        <RecordForm getDataFromForm={getDataFromForm} closeForm={setShowForm}/>
       ) : (
         <>
           <h3 className={styles.title}>
